@@ -1,0 +1,33 @@
+.nav_panel{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.nav_btn{
+    width: 284px;
+    height: 61px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: monsterrat;
+    font-size: 20px;
+    background: rgba(126, 159, 91, 0.45);
+    box-shadow: 7px 7px 24px rgba(0, 0, 0, 0.16), inset 5px -8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+
+.nav_btn a{
+    font-family: montserrat;
+    font-style: normal;
+    font-weight: 400;
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+}
+
+.nav_btn:hover{
+    cursor: pointer;
+    background: rgba(85, 107, 61, 0.45);
+}

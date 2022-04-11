@@ -1,0 +1,46 @@
+main{
+    margin-top: 100px;
+    background-color: #FEFEFE;
+    font-family: monsterrat;
+}
+
+div {
+    font-family: "montserrat";
+    font-style: normal;
+    font-weight: 400;
+  }
+
+.letters{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.topline, .midline, .botline{
+    display: flex;
+    justify-content: center;
+}
+
+
+.letter, .letter_active{
+    margin: 0px 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    color: #000;
+    font-size: 28px;
+    border: 1px solid transparent;
+    border-radius: 20px;
+}
+
+.letter:hover{
+    border-color: rgba(126, 159, 91, 0.45);
+    cursor: pointer;
+}
+
+.letter_active{
+    background: rgba(126, 159, 91, 0.45);
+    box-shadow: inset 5px 0px 15px rgba(0, 0, 0, 0.08)
+}
