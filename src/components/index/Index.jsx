@@ -1,60 +1,96 @@
 import React from "react";
+import { Link, Outlet, NavLink, Route, Routes } from "react-router-dom";
 import "../Header.css";
 import "./Content.css";
+
+const setActive = ({ isActive }) => (isActive ? "active_link" : "not_active");
 
 const Index = () => {
   return (
     <div className="letters">
       <div className="topline">
-        <div className="letter_active">A</div>
-        <div className="letter">B</div>
-        <div className="letter">C</div>
-        <div className="letter">D</div>
-        <div className="letter">E</div>
-        <div className="letter">F</div>
-        <div className="letter">G</div>
-        <div className="letter">H</div>
-        <div className="letter">I</div>
-        <div className="letter">J</div>
-      </div>
+        <NavLink to="/" className={setActive}>A</NavLink>
+        <NavLink to="/B" className={setActive}>B</NavLink>
+        <NavLink to="/C" className={setActive}>C</NavLink>
+        <NavLink to="/D" className={setActive}>D</NavLink>
+        <NavLink to="/E" className={setActive}>E</NavLink>
+        <NavLink to="/F" className={setActive}>F</NavLink>
+        <NavLink to="/G" className={setActive}>G</NavLink>
+        <NavLink to="/H" className={setActive}>H</NavLink>
+        <NavLink to="/I" className={setActive}>I</NavLink>
+        <NavLink to="/J" className={setActive}>J</NavLink>
+        {/* <div className="letter">
+          <a href="/" className={setActive} >A</a>
+        </div> */}
+        {/* <div className="letter">
+          <a href="/B">B</a>
+        </div>
+        <div className="letter">
+          <a href="/C">С</a>
+        </div>
+        <div className="letter">
+          <a href="/D">D</a>
+        </div>
+        <div className="letter">
+          <a href="/E">E</a>
+        </div>
+        <div className="letter">
+          <a href="/F">F</a>
+        </div>
+        <div className="letter">
+          <a href="/G">G</a>
+        </div>
+        <div className="letter">
+          <a href="/H">H</a>
+        </div>
+        <div className="letter">
+          <a href="/I">I</a>
+        </div>
+        <div className="letter">
+          <a href="/J">J</a>
+        </div>*/}
+      </div> 
       <div className="midline">
-        <div className="letter">K</div>
-        <div className="letter">L</div>
-        <div className="letter">M</div>
-        <div className="letter">N</div>
-        <div className="letter">O</div>
-        <div className="letter">P</div>
-        <div className="letter">Q</div>
-        <div className="letter">R</div>
-        <div className="letter">S</div>
+        <NavLink to="/K" className={setActive}>K</NavLink>
+        <NavLink to="/L" className={setActive}>L</NavLink>
+        <NavLink to="/M" className={setActive}>M</NavLink>
+        <NavLink to="/N" className={setActive}>N</NavLink>
+        <NavLink to="/O" className={setActive}>O</NavLink>
+        <NavLink to="/P" className={setActive}>P</NavLink>
+        <NavLink to="/Q" className={setActive}>Q</NavLink>
+        <NavLink to="/R" className={setActive}>R</NavLink>
+        <NavLink to="/S" className={setActive}>S</NavLink>
       </div>
       <div className="botline">
-        <div className="letter">T</div>
-        <div className="letter">U</div>
-        <div className="letter">V</div>
-        <div className="letter">W</div>
-        <div className="letter">X</div>
-        <div className="letter">Y</div>
-        <div className="letter">Z</div>
+        <NavLink to="/T" className={setActive}>T</NavLink>
+        <NavLink to="/U" className={setActive}>U</NavLink>
+        <NavLink to="/V" className={setActive}>V</NavLink>
+        <NavLink to="/W" className={setActive}>W</NavLink>
+        <NavLink to="/X" className={setActive}>X</NavLink>
+        <NavLink to="/Y" className={setActive}>Y</NavLink>
+        <NavLink to="/Z" className={setActive}>Z</NavLink>
       </div>
       <div className="main_content">
         <div className="sign">
           <span>photo</span>
         </div>
-        <div className="description">
+
+        <Outlet />
+
+        {/* <div className="description">
           description of the gesture for the selected letter
-        </div>
+        </div> */}
       </div>
       <div className="nav_panel">
         <div className="nav_btn">
-          <a href="/practice">practice</a>
+          <Link to="/practice">practice</Link>
         </div>
         <div className="nav_btn">
-          <a href="/game">game</a>
+          <Link to="/game">game</Link>
         </div>
       </div>
     </div>
   );
 };
 
-export default Index
+export default Index;

@@ -4,6 +4,8 @@ main{
     font-family: monsterrat;
 }
 
+
+
 div {
     font-family: "montserrat";
     font-style: normal;
@@ -22,7 +24,7 @@ div {
 }
 
 
-.letter, .letter_active{
+.letter, .letter_active, .active_link, .not_active{
     margin: 0px 12px;
     display: flex;
     justify-content: center;
@@ -35,12 +37,22 @@ div {
     border-radius: 20px;
 }
 
-.letter:hover{
+.letter:hover, .not_active:hover{
     border-color: rgba(126, 159, 91, 0.45);
     cursor: pointer;
 }
 
 .letter_active{
+    background: rgba(126, 159, 91, 0.45);
+    box-shadow: inset 5px 0px 15px rgba(0, 0, 0, 0.08)
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.active_link{
     background: rgba(126, 159, 91, 0.45);
     box-shadow: inset 5px 0px 15px rgba(0, 0, 0, 0.08)
 }
