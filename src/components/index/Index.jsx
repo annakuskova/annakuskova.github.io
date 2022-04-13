@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, Outlet, NavLink, Route, Routes } from "react-router-dom";
+import { Link, Outlet, NavLink } from "react-router-dom";
 import "../Header.css";
 import "./Content.css";
 
@@ -19,36 +19,6 @@ const Index = () => {
         <NavLink to="/H" className={setActive}>H</NavLink>
         <NavLink to="/I" className={setActive}>I</NavLink>
         <NavLink to="/J" className={setActive}>J</NavLink>
-        {/* <div className="letter">
-          <a href="/" className={setActive} >A</a>
-        </div> */}
-        {/* <div className="letter">
-          <a href="/B">B</a>
-        </div>
-        <div className="letter">
-          <a href="/C">С</a>
-        </div>
-        <div className="letter">
-          <a href="/D">D</a>
-        </div>
-        <div className="letter">
-          <a href="/E">E</a>
-        </div>
-        <div className="letter">
-          <a href="/F">F</a>
-        </div>
-        <div className="letter">
-          <a href="/G">G</a>
-        </div>
-        <div className="letter">
-          <a href="/H">H</a>
-        </div>
-        <div className="letter">
-          <a href="/I">I</a>
-        </div>
-        <div className="letter">
-          <a href="/J">J</a>
-        </div>*/}
       </div> 
       <div className="midline">
         <NavLink to="/K" className={setActive}>K</NavLink>
@@ -94,3 +64,35 @@ const Index = () => {
 };
 
 export default Index;
+
+
+/* <div className="letter">
+          <a href="/" className={setActive} >A</a>
+        </div> */
+        /* <div className="letter">
+          <a href="/B">B</a>
+        </div>
+        <div className="letter">
+          <a href="/C">С</a>
+        </div>
+        <div className="letter">
+          <a href="/D">D</a>
+        </div>
+        <div className="letter">
+          <a href="/E">E</a>
+        </div>
+        <div className="letter">
+          <a href="/F">F</a>
+        </div>
+        <div className="letter">
+          <a href="/G">G</a>
+        </div>
+        <div className="letter">
+          <a href="/H">H</a>
+        </div>
+        <div className="letter">
+          <a href="/I">I</a>
+        </div>
+        <div className="letter">
+          <a href="/J">J</a>
+        </div>*/

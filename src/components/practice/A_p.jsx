@@ -4,7 +4,7 @@ import "./Content.css";
 const A_p = () => {
     return <div className="main_content">
     <div className="camera">
-      <span>fvbnm,</span>
+      <span>cameraA</span>
     </div>
   </div>
 }
