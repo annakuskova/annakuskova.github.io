@@ -30,13 +30,18 @@ import Y from "./components/index/Y";
 import Z from "./components/index/Z";
 import A_p from "./components/practice/A_p";
 import B_p from "./components/practice/B_p";
+import Go from "./components/game/Go";
+import Description from "./components/game/Description";
 
 
 function App() {
   return (
       <div className="App">
         <Routes>
-          <Route path="/game" element={<Game />} />
+          <Route path="/game" element={<Game />}>
+            <Route index element={<Description />} />
+            <Route path="/game/go" element={<Go />} />
+          </Route>
           <Route path="/" element={<Index />}> 
             <Route index element={<A />} />
             <Route path="/B" element={<B />} />

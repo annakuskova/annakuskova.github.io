@@ -30,3 +30,9 @@
 .score{
     font-size: 32px;
 }
+
+.description, .nav_btn_go{
+    font-family: montserrat;
+    display: flex;
+    align-items: center;
+}

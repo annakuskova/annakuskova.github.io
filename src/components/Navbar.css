@@ -18,6 +18,23 @@
     border-radius: 20px;
 }
 
+.nav_btn_go{
+    width: 284px;
+    height: 61px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: monsterrat;
+    font-size: 20px;
+    background: #fff8b7;
+    box-shadow: 7px 7px 24px rgba(0, 0, 0, 0.16), inset 5px -8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+
+.nav_btn_go:hover{
+    background: #e1dba2;
+}
+
 .nav_btn a{
     font-family: montserrat;
     font-style: normal;
