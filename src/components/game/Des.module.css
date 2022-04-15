@@ -1,0 +1,13 @@
+.mainn{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.descriptionn{
+    font-size: 100px;
+    font-family: montserrat;
+    display: flex;
+    align-items: center;
+}

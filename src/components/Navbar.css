@@ -1,50 +1,107 @@
-.nav_panel{
-    margin-top: 50px;
-    display: flex;
-    justify-content: center;
-    gap: 50px;
+.nav_panel {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
 }
 
-.nav_btn{
-    width: 284px;
-    height: 61px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: monsterrat;
-    font-size: 20px;
-    background: rgba(126, 159, 91, 0.45);
-    box-shadow: 7px 7px 24px rgba(0, 0, 0, 0.16), inset 5px -8px 16px rgba(0, 0, 0, 0.1);
-    border-radius: 20px;
+.nav_panel_game {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-bottom: 100px;
 }
 
-.nav_btn_go{
-    width: 284px;
-    height: 61px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: monsterrat;
-    font-size: 20px;
-    background: #fff8b7;
-    box-shadow: 7px 7px 24px rgba(0, 0, 0, 0.16), inset 5px -8px 16px rgba(0, 0, 0, 0.1);
-    border-radius: 20px;
+.bottom {
+  height: 50px;
 }
 
-.nav_btn_go:hover{
-    background: #e1dba2;
+.nav_btn {
+  width: 284px;
+  height: 61px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: monsterrat;
+  font-size: 20px;
+  background: rgba(126, 159, 91, 0.45);
+  box-shadow: 7px 7px 24px rgba(0, 0, 0, 0.16),
+    inset 5px -8px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
 }
 
-.nav_btn a{
-    font-family: montserrat;
+.nav_btn_go {
+  text-align: center;
+  width: 184px;
+  height: 61px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: monsterrat;
+  font-size: 20px;
+  background: #fff8b7;
+  box-shadow: 7px 7px 24px rgba(0, 0, 0, 0.16),
+    inset 5px -8px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+
+.nav_btn_back {
+  position: absolute;
+  width: 120px;
+  height: 61px;
+  left: 125px;
+  top: 170px;
+
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 29px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  background: #fff8b7;
+  box-shadow: 7px 7px 24px rgba(0, 0, 0, 0.16),
+    inset 5px -8px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+
+.nav_btn_back a {
+
+    width: 111.97px;
+    height: 100px;
+    left: 1000px;
+    top: 150px;
+    
+    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
-    text-decoration: none;
-    color: #000;
     font-size: 20px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+} 
+
+.nav_btn_go:hover {
+  background: #e1dba2;
+  cursor: pointer;
 }
 
-.nav_btn:hover{
-    cursor: pointer;
-    background: rgba(85, 107, 61, 0.45);
+.nav_btn a {
+  font-family: montserrat;
+  font-style: normal;
+  font-weight: 400;
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+}
+
+.nav_btn:hover {
+  cursor: pointer;
+  background: rgba(85, 107, 61, 0.45);
 }
