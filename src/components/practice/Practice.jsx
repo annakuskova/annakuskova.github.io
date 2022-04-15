@@ -9,7 +9,7 @@ const Practice = () => {
   return (
     <div className="letters">
       <div className="topline">
-        <NavLink to="/practice" className={setActive}>A</NavLink>
+        <NavLink to="/practice/" className={setActive}>A</NavLink>
         <NavLink to="/practice/B" className={setActive}>B</NavLink>
         <NavLink to="/practice/C" className={setActive}>C</NavLink>
         <NavLink to="/practice/D" className={setActive}>D</NavLink>
