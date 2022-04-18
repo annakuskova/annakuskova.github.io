@@ -46,12 +46,13 @@
   border-radius: 20px;
 }
 
+
 .nav_btn_back {
   position: absolute;
-  width: 120px;
-  height: 61px;
+  width: 102px;
+  height: 102px;
   left: 125px;
-  top: 170px;
+  top: 150px;
 
   font-family: "Montserrat";
   font-style: normal;
@@ -63,29 +64,30 @@
   align-items: center;
   text-align: center;
 
-  background: #fff8b7;
+  background: rgba(126, 159, 91, 0.45);
   box-shadow: 7px 7px 24px rgba(0, 0, 0, 0.16),
     inset 5px -8px 16px rgba(0, 0, 0, 0.1);
-  border-radius: 20px;
+  border-radius: 100px;  
 }
 
-.nav_btn_back a {
 
-    width: 111.97px;
-    height: 100px;
-    left: 1000px;
-    top: 150px;
-    
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 29px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-} 
+
+.nav_btn_back a {
+  width: 111.97px;
+  height: 100px;
+  left: 1000px;
+  top: 150px;
+
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 29px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
 
 .nav_btn_go:hover {
   background: #e1dba2;
@@ -101,7 +103,7 @@
   font-size: 20px;
 }
 
-.nav_btn:hover {
+.nav_btn:hover, .nav_btn_back:hover {
   cursor: pointer;
   background: rgba(85, 107, 61, 0.45);
 }
