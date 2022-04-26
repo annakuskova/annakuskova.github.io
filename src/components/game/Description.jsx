@@ -5,6 +5,7 @@ import "./Content.css";
 
 
 const Description = () => {
+
   return (
     <div className="main">
 
@@ -15,6 +16,9 @@ const Description = () => {
       </div>
 
       <div className="nav_panel_game">
+        {/* <div className="nav_btn">
+          <button onClick={handleStart}>start</button>
+        </div> */}
         <div className="nav_btn_go">
           <Link to="/game/go">GO!</Link>
         </div>

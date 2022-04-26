@@ -93,7 +93,7 @@ function App() {
             <Route path="/Y" element={<Y />} />
             <Route path="/Z" element={<Z />} />
           </Route>
-          <Route path="/practice" element={<Practice />}> 
+          <Route path="/practice/" element={<Practice />}> 
             <Route index element={<A_p />} />
             <Route path="/practice/B" element={<B_p />} />
             <Route path="/practice/C" element={<C_p />} />

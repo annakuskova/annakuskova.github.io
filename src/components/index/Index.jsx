@@ -41,9 +41,6 @@ const Index = () => {
         <NavLink to="/Z" className={setActive}>Z</NavLink>
       </div>
       <div className="main_content">
-        <div className="sign">
-          <span>photo</span>
-        </div>
 
         <Outlet />
 
@@ -53,7 +50,7 @@ const Index = () => {
       </div>
       <div className="nav_panel">
         <div className="nav_btn">
-          <Link to="/practice">practice</Link>
+          <Link to="/practice/">practice</Link>
         </div>
         <div className="nav_btn">
           <Link to="/game">game</Link>

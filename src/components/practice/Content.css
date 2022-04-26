@@ -11,7 +11,7 @@
     gap: 50px;
 }
 
-.camera{
+/* .camera{
     width: 504px;
     height: 325px;
     background: rgba(196, 196, 196, 0.51);
@@ -19,8 +19,12 @@
     justify-content: center;
     align-items: center;
     font-size: 28px;
-}
+} */
 
+#video{
+    width: 100%;
+
+}
 
 .nav_btn{
     width: 284px;

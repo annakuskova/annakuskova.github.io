@@ -10,7 +10,7 @@ const Game = () => {
       
       <div className="nav_panel">
         <div className="nav_btn">
-          <Link to="/practice">practice</Link>
+          <Link to="/practice/">practice</Link>
         </div>
         <div className="nav_btn">
           <Link to="/">education</Link>

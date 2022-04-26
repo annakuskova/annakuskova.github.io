@@ -4,6 +4,11 @@
     justify-content: center;
 }
 
+.content{
+    display: flex;
+    justify-content: center;   
+}
+
 .sign{
     width: 320px;
     height: 320px;
@@ -12,6 +17,11 @@
     justify-content: center;
     align-items: center;
     font-size: 24px;
+}
+
+img{
+    width: 320px;
+    height: 320px;
 }
 
 .itsgame{
