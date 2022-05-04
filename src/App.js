@@ -23,6 +23,7 @@ import Q from "./components/index/Q";
 import R from "./components/index/R";
 import S from "./components/index/S";
 import T from "./components/index/T";
+import U from "./components/index/U";
 import V from "./components/index/V";
 import W from "./components/index/W";
 import X from "./components/index/X";
@@ -87,6 +88,7 @@ function App() {
             <Route path="/R" element={<R />} />
             <Route path="/S" element={<S />} />
             <Route path="/T" element={<T />} />
+            <Route path="/U" element={<U />} />
             <Route path="/V" element={<V />} />
             <Route path="/W" element={<W />} />
             <Route path="/X" element={<X />} />
