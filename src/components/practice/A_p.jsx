@@ -7,6 +7,8 @@ const A_p = () => {
       <div className="camera">
         <video id="video"></video>
       </div>
+      <canvas id="canvas"></canvas>
+      <img id="photo" alt="photo" />
     </div>
   );
 };

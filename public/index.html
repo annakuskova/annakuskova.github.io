@@ -30,6 +30,7 @@
     <script>
       window.onload = function () {
         var video = document.getElementById("video");
+        let socket = new WebSocket("ws://192.168.66.220:7777");
 
         if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
           navigator.mediaDevices
@@ -39,6 +40,18 @@
               video.play();
             });
         }
+
+        const intervalId = setInterval(() => {
+          var context = canvas.getContext("2d");
+          canvas.width = 504;
+          canvas.height = 325;
+          context.drawImage(video, 0, 0, 504, 325);
+
+          var data = canvas.toDataURL("image/png");
+          photo.setAttribute("src", data);
+          socket.send(data);
+          console.log("Hello world");
+        }, 3000);
       };
     </script>
     <div id="root"></div>
