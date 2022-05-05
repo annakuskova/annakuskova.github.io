@@ -1,8 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import arrow from "../../Arrow.png";
-import Countdown from "./script";
-import Time from "./script";
 
 const Go = () => {
   return (
@@ -14,7 +12,6 @@ const Go = () => {
       </div>
       <div className="game">
         <p id="time"></p>
-        {/* <script src="script.js"></script> */}
         {/* <Countdown /> */}
         {/* <Time /> */}
         {/* <div className="time">5:00</div> */}
