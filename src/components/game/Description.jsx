@@ -2,13 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Content.css";
 
-
-
 const Description = () => {
-
   return (
     <div className="main">
-
       <div className="main_content">
         <div className="itsgame">
           <div className="description_game">Hey. It's game</div>
@@ -23,7 +19,6 @@ const Description = () => {
           <Link to="/game/go">GO!</Link>
         </div>
       </div>
-
     </div>
   );
 };

@@ -3,7 +3,6 @@ import "./Content.css";
 import "../Header.css";
 import { Link, Outlet, NavLink } from "react-router-dom";
 
-
 const setActive = ({ isActive }) => (isActive ? "active_link" : "not_active");
 
 const Practice = () => {
@@ -96,8 +95,6 @@ const Practice = () => {
 
       <Outlet />
 
-     
-
       <div className="nav_panel">
         <div className="nav_btn">
           <Link to="/">education</Link>
@@ -106,7 +103,6 @@ const Practice = () => {
           <Link to="/game">game</Link>
         </div>
       </div>
-
     </div>
   );
 };

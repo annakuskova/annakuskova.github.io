@@ -4,11 +4,11 @@ import "./Content.css";
 const V_p = () => {
   return (
     <div className="main_content">
-      <div className="camera">
+      <div className="camera" id="cam_elem">
         <video id="video"></video>
       </div>
       <canvas id="canvas"></canvas>
-      <img id="photo" alt="photo" />
+      <input type="hidden" name="letter" id="letter" value="v" />
     </div>
   );
 };

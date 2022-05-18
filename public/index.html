@@ -30,11 +30,22 @@
     <script>
       window.onload = function () {
         var video = document.getElementById("video");
-        let socket = new WebSocket("ws://192.168.66.220:7777");
+        var canvas = document.getElementById("canvas");
+        var letter = document.getElementById("letter");
+        var score = document.getElementById("score");
+        let socket = new WebSocket("ws://172.20.10.12:7777");
+        var cam = document.getElementById("cam_elem");
+        const alphabet = "abcdefghijklmnoprstuvwxyz";
+
+        function getRandomLetter() {
+          return alphabet[Math.floor(Math.random() * 26)];
+        }
 
         if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
           navigator.mediaDevices
-            .getUserMedia({ video: { facingMode: "user" } })
+            .getUserMedia({
+              video: { facingMode: "user", height: 342, width: 457 },
+            })
             .then(function (stream) {
               video.srcObject = stream;
               video.play();
@@ -42,18 +53,31 @@
         }
 
         const intervalId = setInterval(() => {
+          canvas.width = 320;
+          canvas.height = 240;
           var context = canvas.getContext("2d");
-          canvas.width = 504;
-          canvas.height = 325;
-          context.drawImage(video, 0, 0, 504, 325);
+          context.drawImage(video, 0, 0, 320, 240);
 
           var data = canvas.toDataURL("image/png");
-          photo.setAttribute("src", data);
           socket.send(data);
-          console.log("Hello world");
-        }, 3000);
+        }, 500);
+
+        socket.onmessage = function (event) {
+          let message = event.data;
+          console.log("message " + message);
+          if (message == letter.textContent) {
+            cam.classList.remove("wrong");
+            cam.classList.add("right");
+            letter.textContent = getRandomLetter();
+            score.textContent = parseInt(score.textContent) + 1;
+          } else {
+            cam.classList.remove("right");
+            cam.classList.add("wrong");
+          }
+        };
       };
     </script>
+
     <div id="root"></div>
   </body>
 </html>

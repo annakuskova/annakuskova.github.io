@@ -1,8 +1,9 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import arrow from "../../Arrow.png";
+import { GameLogic } from "./GameLogic";
 
 const Go = () => {
+  const { minute, sec, millisec } = GameLogic();
   return (
     <div className="main">
       <div className="nav_btn_back">
@@ -12,12 +13,25 @@ const Go = () => {
       </div>
       <div className="game">
         <p id="time"></p>
-        {/* <Countdown /> */}
-        {/* <Time /> */}
-        {/* <div className="time">5:00</div> */}
-        <div className="camera">camera</div>
 
-        <div className="score">5/10</div>
+        <h1>
+          <span className="time">{minute}</span>
+          <span className="time"> : </span>
+          <span className="time">{sec}</span>
+          <span className="time"> : </span>
+          <span className="time">{millisec}</span>
+        </h1>
+        <h1>
+          <span id="letter">a</span>
+        </h1>
+
+        <div className="camera" id="cam_elem">
+          <video id="video"></video>
+        </div>
+        <canvas id="canvas"></canvas>
+        <div className="score" id="score">
+          0
+        </div>
       </div>
     </div>
   );
