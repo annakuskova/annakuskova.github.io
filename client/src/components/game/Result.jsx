@@ -12,7 +12,7 @@ const Result = () => {
       </div>
       <div className="game"></div>
       <div className="texttt">
-        Вы набрали <span>5</span> очков
+        Вы набрали <span>4</span> очкa
       </div>
     </div>
   );
